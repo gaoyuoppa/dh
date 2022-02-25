@@ -9,10 +9,244 @@
 
   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" /> 
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" /> 
-<link rel="stylesheet" href="https://gitee.com/yuyuyu233/daohang/raw/master/gycss/dhy.css" />	
+
 
 	<style type="text/css">
+	 body {
+    font-size: 18px;
+    color: #6c767d;
+    background-color: #ebf1f5;
+    height: 100vh;
+    min-height: 800px;
+}
 
+h1 {
+    font-size: 36px;
+    margin-bottom: .5em;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 1em;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: black;
+}
+
+.card {
+    border: none;
+    padding: 80px 80px 50px;
+    border-radius: 0;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.my-card {
+    box-shadow: 0px 5px 15px 5px rgb(203, 221, 232);
+}
+
+strike {
+    color: red;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary {
+    box-shadow: 0px 5px 15px 5px rgb(203, 221, 232);
+    padding: 12px 40px;
+    transition: ease;
+}
+
+.btn-primary:hover {
+    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
+}
+
+.btn-secondary {
+    box-shadow: 0px 5px 15px 5px rgb(203, 221, 232);
+    padding: 12px 40px;
+    transition: ease;
+}
+
+.btn-secondary:hover {
+    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
+}
+
+.social {
+    padding-left: 0;
+}
+
+.social p {
+    margin-bottom: 0;
+}
+
+.social li {
+    list-style: none;
+    float: left;
+    margin-right: 15px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+.social .fa {
+    font-size: 24px;
+}
+
+.photo-bg {
+    /* background-image: url(assets/background.jpg); */
+    background-image: url(/02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+@media (max-width: 1199px) {
+    body {
+        min-height: 600px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2,
+    .social .fa {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h4,
+    p {
+        font-size: 14px;
+    }
+    .card {
+        padding: 50px 50px 30px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .photo-bg {
+        min-height: calc(100vh - 500px);
+    }
+}
+
+@media(max-width:991px) {
+    .photo-bg {
+        background-position: top;
+        min-height: calc(90vh - 440px);
+    }
+}
+
+@media(max-width: 767px) {
+    .container {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+    }
+    .photo-bg {
+        height: 180px;
+    }
+    .card {
+        padding: 20px;
+    }
+}
+background-repeat:no-repeat;background-position:center} 
+.title{
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: cadetblue;
+            margin-top: 100px;
+            margin-bottom: 20px;
+            font-family: fantasy;
+        }
+
+        /* 下面是搜索框样式 */
+        .searchBox{
+            width: 100%;
+            height: 35px;
+            border: 1px solid cadetblue;
+            outline: hidden;
+            border-radius: 2px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .inputBox{
+                border: none;
+    width: 80%;
+    height: 26px;
+    line-height: 35px;
+    outline: none;
+    padding-left: 8px;
+    caret-color: #008B8B;
+    font-size: 14px;
+        }
+
+        .searchBtn{
+            width: 76px;
+    height: 33px;
+    border: none;
+    position: absolute;
+    right: 0;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    background-color: cornflowerblue;
+        }
+
+        /* 鼠标滑过按钮时背景色改变 */
+        .searchBtn:hover{
+            background-color: #497fdf;
+        }
+        #M1{
+        	width: 100px;
+    height: 36px;
+    padding-top: 2px\9;
+    /* cursor: pointer; */
+    color: #fff;
+    font-size: 15px;
+    /* letter-spacing: 1px; */
+    background: #3385ff;
+    /* border-bottom: 1px solid #2d78f4; */
+    /* outline: medium; */
+    *: ;
+    border-bottom: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border: 0;
+        text-align: center;
+    text-decoration:none;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+        padding: 7px;
+        float: left;
+        margin-left: 2%;     
+        margin-top: 2%;
+        }
 
 body{background-image:url(data:image/png;base64,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); 
 
@@ -139,7 +373,7 @@ background-repeat:no-repeat;background-position:center}
       <a href="https://bigjpg.com/" target="_blank" id="M1">AI图片放大</a> 
       <a href="https://github.com/" target="_blank" id="M1">github</a> 	     
 <a href="https://console.cloud.tencent.com" target="_blank" id="M1">腾讯云</a> 
-<a href="https://icy-bird-39b5.gaoyu.workers.dev/" target="_blank" id="M1">GitHub 文件加速</a> 
+<a href="https://icy-bird-39b5.gaoyu.workers.dev/" target="_blank" id="M1">GitHub加速</a> 
      </div> 
      <br /> 
      <p>B:</p> 
